@@ -1,6 +1,6 @@
 # ALX — React JS
 
-`Front-endES6`
+`Front-end`
 `JavaScript`
 `ES6`
 

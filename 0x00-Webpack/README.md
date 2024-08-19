@@ -2,13 +2,13 @@
 
 0x00. Webpack
 
-`Front-endES6`
+`Front-end`
 `JavaScript`
 `ES6`
 
 ## Overview
 
-``Webpack`` is a powerful module bundler for JavaScript applications. It takes modules with dependencies and generates static assets representing those modules. Webpack can handle tasks like bundling, transpiling, and optimizing your code, making it essential for modern web development.
+`Webpack` is a powerful module bundler for JavaScript applications. It takes modules with dependencies and generates static assets representing those modules. Webpack can handle tasks like bundling, transpiling, and optimizing your code, making it essential for modern web development.
 
 ## Features
 
