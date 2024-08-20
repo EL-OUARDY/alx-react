@@ -1,24 +1,30 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = {
-  entry: "./js/dashboard_main.js",
+  entry: './js/dashboard_main.js',
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "public"),
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'public'),
   },
-  mode: "production",
+  mode: 'production',
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(png|jpg|jpeg|gif)$/i,
-        type: "asset/resource",
+        type: 'asset/resource',
         use: [
           {
-            loader: "image-webpack-loader",
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+            },
+          },
+          {
+            loader: 'image-webpack-loader',
             options: {
               mozjpeg: {
                 progressive: true,
@@ -43,7 +49,7 @@ module.exports = {
     ],
   },
   performance: {
-    hints: "warning",
+    hints: 'warning',
     maxAssetSize: 2000000, // Set the size limit for assets to 200KB
   },
 };
