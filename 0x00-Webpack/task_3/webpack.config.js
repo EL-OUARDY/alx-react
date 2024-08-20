@@ -1,12 +1,24 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-  entry: "./js/dashboard_main.js",
+  entry: {
+    header: "./modules/header/header.js",
+    body: "./modules/body/body.js",
+    footer: "./modules/footer/footer.js",
+  },
   output: {
-    filename: "bundle.js",
+    filename: "[name].bundle.js",
     path: path.resolve(__dirname, "public"),
   },
-  mode: "production",
+  mode: "development",
+  devtool: "inline-source-map",
+  devServer: {
+    contentBase: path.resolve(__dirname, "public"),
+    port: 8564,
+    open: true,
+  },
   module: {
     rules: [
       {
@@ -42,6 +54,17 @@ module.exports = {
       },
     ],
   },
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+    },
+  },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: "./public/index.html",
+    }),
+  ],
   performance: {
     hints: "warning",
     maxAssetSize: 2000000, // Set the size limit for assets to 200KB
