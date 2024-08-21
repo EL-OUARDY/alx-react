@@ -1,4 +1,16 @@
-div.Notifications {
+.Notifications {
   padding: 10px;
-  border: 4px solid #e0354b;
+  border: 2px dashed #e0354b;
+  margin: 5px;
+}
+
+.Notifications ul {
+  padding-left: 20px;
+}
+
+.Notifications ul li[data-priority="default"] {
+  color: blue;
+}
+.Notifications ul li[data-priority="urgent"] {
+  color: red;
 }

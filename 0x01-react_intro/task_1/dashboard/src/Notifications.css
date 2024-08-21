@@ -1,4 +1,5 @@
 div.Notifications {
   padding: 10px;
-  border: 4px solid #e0354b;
+  border: 2px dashed #e0354b;
+  margin: 5px;
 }
