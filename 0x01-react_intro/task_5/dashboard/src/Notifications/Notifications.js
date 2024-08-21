@@ -1,7 +1,7 @@
 import React from "react";
 import "./Notifications.css";
-import closeImg from "./close-icon.png";
-import { getLatestNotification } from "./utils";
+import closeImg from "../assets/close-icon.png";
+import { getLatestNotification } from "../utils/utils";
 function Notifications() {
   return (
     <div className="Notifications">
