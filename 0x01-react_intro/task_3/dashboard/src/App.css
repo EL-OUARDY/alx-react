@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 5px 0;
+}
+
+.App-header h1 {
+  color: #e0354b;
+}
+.App-header img {
+  width: 100px;
+  height: 100px;
+}
+
+.App-body {
+  border-top: 4px solid #e0354b;
+  border-bottom: 4px solid #e0354b;
+  flex: 1;
+  padding: 10px;
+}
+
+.App-footer {
+  text-align: center;
+  padding: 10px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.login input {
+  padding: 4px;
+}
+
+.login button {
+  padding: 4px;
+  background-color: #e0354b;
+  color: #fff;
+  border: none;
+}
