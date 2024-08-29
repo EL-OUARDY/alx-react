@@ -1,0 +1,15 @@
+table#CourseList {
+  width: 100%;
+  text-align: left;
+  border: 2px;
+}
+
+th:first-of-type {
+  text-align: center;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 5px;
+}
