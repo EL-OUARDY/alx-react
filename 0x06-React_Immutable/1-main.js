@@ -1,4 +1,4 @@
-import getImmutableObject from "./1-map.js";
+import getImmutableObject from './1-map.js';
 
 const object = {
   fear: true,
